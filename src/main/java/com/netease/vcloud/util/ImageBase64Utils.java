@@ -3,8 +3,9 @@ package com.netease.vcloud.util;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Base64;
+
 import org.apache.log4j.Logger;
-import sun.misc.BASE64Encoder;
 
 /**
 * <p>Title: ImageBase64Utils</p>
@@ -43,11 +44,8 @@ public class ImageBase64Utils {
 				}
 			}			
 		}
-
-		/* 对字节数组Base64编码 */
-		BASE64Encoder encoder = new BASE64Encoder();
 		/* 返回Base64编码过的字节数组字符串  */
-		return encoder.encode(data);
+		return Base64.getEncoder().encodeToString(data);
 	}
 
 	

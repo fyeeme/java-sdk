@@ -174,4 +174,24 @@ Java-SDK 是用于服务器端点播上传的软件开发工具包，提供简�
 **v1.0.0**
 
 1. Java SDK 的初始版本，提供点播上传的基本功能。包括：文件上传、获取进度、断点续传、查询视频、设置回调。
+2. 提供 基于 jdk 1.8版本的 jar:
+   1. [vcloud-sdk-java-1.0.0.jar](/lib/vcloud-sdk-java-1.0.0.jar)
+   2. [vcloud-sdk-java-1.0.0-jar-with-dependencies.jar](/lib/vcloud-sdk-java-1.0.0-jar-with-dependencies.jar)
 
+## 5 如何使用
+
+1. 安装到本地maven
+```shell
+mvn org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file -Dfile=lib/vcloud-sdk-java-1.0.0.jar -DgroupId=com.netease -DartifactId=vcloud-sdk -Dversion=1.0.0 -Dpackaging=jar
+```
+2. 添加到 build.gradle 或者 pom.mxl
+```gradle
+ implementation 'com.netease:vcloud-sdk:1.0.0'
+```
+```xml
+<dependency>
+   <groupId>com.netease</groupId>
+   <artifactId>vcloud-sdk</artifactId>
+   <version>1.0.0</version>
+</dependency>
+```
