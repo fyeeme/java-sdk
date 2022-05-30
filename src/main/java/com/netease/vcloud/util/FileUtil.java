@@ -5,9 +5,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.VcloudException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * <p>Title: FileUtil</p>
@@ -18,7 +20,7 @@ import com.netease.vcloud.VcloudException;
 public class FileUtil {
 
 	/** 日志实例*/
-	public static final Logger  logger = Logger.getLogger(FileUtil.class);
+	public static final Logger logger = LoggerFactory.getLogger(FileUtil.class);
 	/**
 	 * 
 	 * <p>Title: doesFileExist</p>

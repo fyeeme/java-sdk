@@ -3,13 +3,15 @@ package com.netease.vcloud.upload.service.impl;
 import java.io.IOException;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.VcloudException;
 import com.netease.vcloud.upload.module.InitUploadVideoModule;
 import com.netease.vcloud.upload.param.InitUploadVideoParam;
 import com.netease.vcloud.upload.service.InitUploadVideoService;
 import com.netease.vcloud.upload.util.UploadUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * <p>Title: InitUploadVideoServiceImpl</p>
@@ -20,7 +22,7 @@ import com.netease.vcloud.upload.util.UploadUtil;
 public class InitUploadVideoServiceImpl implements InitUploadVideoService {
 
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(InitUploadVideoServiceImpl.class);
+	public static final Logger logger = LoggerFactory.getLogger(InitUploadVideoServiceImpl.class);
 
 	/* 
 	* <p>Title: initUploadVideo</p>

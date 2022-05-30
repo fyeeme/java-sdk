@@ -6,7 +6,9 @@ import com.netease.vcloud.auth.Credentials;
 import com.netease.vcloud.client.VcloudClient;
 import com.netease.vcloud.upload.param.*;
 import com.netease.vcloud.util.FileUtil;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +30,7 @@ public class QueryOffsetDemo {
     /**
      * 日志实例
      */
-    public static final Logger logger = Logger.getLogger(QueryOffsetDemo.class);
+    public static final Logger logger = LoggerFactory.getLogger(QueryOffsetDemo.class);
 
     public static void main(String[] args) throws VcloudException, IOException {
          /* 输入个人信息 */

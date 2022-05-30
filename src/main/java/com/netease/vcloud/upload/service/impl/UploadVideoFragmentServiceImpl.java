@@ -3,7 +3,7 @@ package com.netease.vcloud.upload.service.impl;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.VcloudException;
 import com.netease.vcloud.upload.param.GetUploadHostParam;
@@ -11,6 +11,8 @@ import com.netease.vcloud.upload.param.InitUploadVideoParam;
 import com.netease.vcloud.upload.param.UploadVideoFragmentParam;
 import com.netease.vcloud.upload.service.UploadVideoFragmentService;
 import com.netease.vcloud.upload.util.UploadUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -23,7 +25,7 @@ public class UploadVideoFragmentServiceImpl implements UploadVideoFragmentServic
 
 	
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(UploadVideoFragmentServiceImpl.class);	
+	public static final Logger logger = LoggerFactory.getLogger(UploadVideoFragmentServiceImpl.class);
 	
 	/* 
 	* <p>Title: uploadVideo</p>

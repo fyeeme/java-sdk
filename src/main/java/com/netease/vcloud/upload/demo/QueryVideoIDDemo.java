@@ -4,7 +4,9 @@ import com.netease.vcloud.auth.BasicCredentials;
 import com.netease.vcloud.auth.Credentials;
 import com.netease.vcloud.client.VcloudClient;
 import com.netease.vcloud.upload.param.QueryVideoIDorWatermarkIDParam;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +24,7 @@ public class QueryVideoIDDemo {
     /**
      * 日志实例
      */
-    public static final Logger logger = Logger.getLogger(QueryVideoIDDemo.class);
+    public static final Logger logger = LoggerFactory.getLogger(QueryVideoIDDemo.class);
 
     public static void main(String[] args) {
 

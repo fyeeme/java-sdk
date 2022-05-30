@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.ClientConfiguration;
 import com.netease.vcloud.VcloudException;
@@ -35,6 +35,8 @@ import com.netease.vcloud.upload.service.impl.SetCallbackServiceImpl;
 import com.netease.vcloud.upload.service.impl.UploadVideoFragmentServiceImpl;
 import com.netease.vcloud.upload.service.impl.UploadVideoServiceImpl;
 import com.netease.vcloud.upload.service.impl.UploadVideoWithRecorderServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * <p>Title: VcloudClient</p>
@@ -45,7 +47,7 @@ import com.netease.vcloud.upload.service.impl.UploadVideoWithRecorderServiceImpl
 public class VcloudClient {
 
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(VcloudClient.class);
+	public static final Logger logger = LoggerFactory.getLogger(VcloudClient.class);
 	
 	/** 访问服务的凭据类*/
 	private Credentials credentials;

@@ -3,10 +3,12 @@ package com.netease.vcloud.util;
 import java.util.Date;
 
 import org.apache.http.client.methods.HttpPost;
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.VcloudException;
 import com.netease.vcloud.config.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * <p>Title: HttpPostBuilder</p>
@@ -17,7 +19,7 @@ import com.netease.vcloud.config.Config;
 public class HttpPostBuilder {
 	
 	/** 日志实例*/
-	public static final Logger  logger = Logger.getLogger(HttpPostBuilder.class);
+	public static final Logger logger = LoggerFactory.getLogger(HttpPostBuilder.class);
 	
 	
 	/**

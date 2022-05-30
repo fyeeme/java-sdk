@@ -4,7 +4,8 @@ import com.netease.vcloud.auth.BasicCredentials;
 import com.netease.vcloud.auth.Credentials;
 import com.netease.vcloud.client.VcloudClient;
 import com.netease.vcloud.upload.param.GetUploadHostParam;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -19,7 +20,7 @@ public class GetUploadHostDemo {
     /**
      * 日志实例
      */
-    public static final Logger logger = Logger.getLogger(GetUploadHostDemo.class);
+    public static final Logger logger = LoggerFactory.getLogger(GetUploadHostDemo.class);
 
     public static void main(String[] args) {
 

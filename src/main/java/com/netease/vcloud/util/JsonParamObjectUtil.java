@@ -7,11 +7,13 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Logger;
+
 
 import com.alibaba.fastjson.JSON;
 import com.netease.vcloud.BaseModule;
 import com.netease.vcloud.VcloudException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -23,7 +25,7 @@ import com.netease.vcloud.VcloudException;
 public class JsonParamObjectUtil {
 	
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(JsonParamObjectUtil.class);	
+	public static final Logger logger = LoggerFactory.getLogger(JsonParamObjectUtil.class);
 	
 
 	/**

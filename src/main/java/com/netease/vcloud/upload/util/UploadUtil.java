@@ -3,7 +3,6 @@ package com.netease.vcloud.upload.util;
 import java.io.IOException;
 import java.io.InputStream;
 
-
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -12,7 +11,6 @@ import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.entity.StringEntity;
 
 import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Logger;
 
 
 import com.alibaba.fastjson.JSON;
@@ -30,6 +28,8 @@ import com.netease.vcloud.upload.param.SetCallbackParam;
 import com.netease.vcloud.util.HttpClientBuilder;
 import com.netease.vcloud.util.HttpGetBuilder;
 import com.netease.vcloud.util.HttpPostBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * <p>Title: UploadUtil</p>
@@ -41,7 +41,7 @@ import com.netease.vcloud.util.HttpPostBuilder;
 public class UploadUtil {
 
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(UploadUtil.class);
+	public static final Logger logger = LoggerFactory.getLogger(UploadUtil.class);
 	
 	/** 切片上传：最小片字节数（默认不变） */
 	private long uploadDataSize = Config.getUploadDataSize();

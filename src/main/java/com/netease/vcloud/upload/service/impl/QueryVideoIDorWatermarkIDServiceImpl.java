@@ -3,13 +3,15 @@ package com.netease.vcloud.upload.service.impl;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.VcloudException;
 import com.netease.vcloud.upload.module.QueryVideoIDorWatermarkIDModule;
 import com.netease.vcloud.upload.param.QueryVideoIDorWatermarkIDParam;
 import com.netease.vcloud.upload.service.QueryVideoIDorWatermarkIDService;
 import com.netease.vcloud.upload.util.UploadUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -21,7 +23,7 @@ import com.netease.vcloud.upload.util.UploadUtil;
 public class QueryVideoIDorWatermarkIDServiceImpl implements QueryVideoIDorWatermarkIDService {
 
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(QueryVideoIDorWatermarkIDServiceImpl.class);
+	public static final Logger logger = LoggerFactory.getLogger(QueryVideoIDorWatermarkIDServiceImpl.class);
 	
 	/* 
 	* <p>Title: queryVideoID</p>

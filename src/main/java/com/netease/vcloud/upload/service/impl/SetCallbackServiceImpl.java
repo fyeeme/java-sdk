@@ -2,13 +2,15 @@ package com.netease.vcloud.upload.service.impl;
 
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.VcloudException;
 import com.netease.vcloud.upload.module.SetCallbackModule;
 import com.netease.vcloud.upload.param.SetCallbackParam;
 import com.netease.vcloud.upload.service.SetCallbackService;
 import com.netease.vcloud.upload.util.UploadUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 
@@ -20,7 +22,7 @@ import com.netease.vcloud.upload.util.UploadUtil;
 public class SetCallbackServiceImpl implements SetCallbackService {
 
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(SetCallbackServiceImpl.class);
+	public static final Logger logger = LoggerFactory.getLogger(SetCallbackServiceImpl.class);
 	
 	/* 
 	* <p>Title: setCallback</p>

@@ -4,9 +4,10 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.log4j.Logger;
-import com.netease.vcloud.config.Config;
 
+import com.netease.vcloud.config.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -17,7 +18,7 @@ import com.netease.vcloud.config.Config;
 */
 public class HttpClientBuilder {
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(HttpClientBuilder.class);
+	public static final Logger logger = LoggerFactory.getLogger(HttpClientBuilder.class);
 	
 	/** 设置连接超时限制  */
 	private static Integer connectionTimeout = Config.getConnectionTimeout();	

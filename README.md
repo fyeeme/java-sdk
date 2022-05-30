@@ -178,6 +178,12 @@ Java-SDK 是用于服务器端点播上传的软件开发工具包，提供简�
    1. [vcloud-sdk-java-1.0.0.jar](/lib/vcloud-sdk-java-1.0.0.jar)
    2. [vcloud-sdk-java-1.0.0-jar-with-dependencies.jar](/lib/vcloud-sdk-java-1.0.0-jar-with-dependencies.jar)
 
+## build 
+
+```shell
+mvn clean package 
+```
+
 ## 5 如何使用
 
 1. 安装到本地maven

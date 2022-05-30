@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
-
 import com.netease.vcloud.VcloudException;
 import com.netease.vcloud.upload.param.GetUploadHostParam;
 import com.netease.vcloud.upload.param.InitUploadVideoParam;
@@ -21,6 +19,8 @@ import com.netease.vcloud.upload.service.QueryVideoIDorWatermarkIDService;
 import com.netease.vcloud.upload.service.UploadVideoFragmentService;
 import com.netease.vcloud.upload.service.UploadVideoWithRecorderService;
 import com.netease.vcloud.util.FileUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * <p>Title: UploadVideoWithRecorderServiceImpl</p>
@@ -32,7 +32,7 @@ import com.netease.vcloud.util.FileUtil;
 public class UploadVideoWithRecorderServiceImpl implements UploadVideoWithRecorderService {
 
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(UploadVideoWithRecorderServiceImpl.class);	
+	public static final Logger logger = LoggerFactory.getLogger(UploadVideoWithRecorderServiceImpl.class);
 	
 
 	/**

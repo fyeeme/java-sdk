@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Base64;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * <p>Title: ImageBase64Utils</p>
@@ -16,7 +17,7 @@ import org.apache.log4j.Logger;
 public class ImageBase64Utils {	
 
 	/** 日志实例 */
-	public static final Logger  logger = Logger.getLogger(ImageBase64Utils.class);
+	public static final Logger  logger = LoggerFactory.getLogger(ImageBase64Utils.class);
 
 	/* 
 	 * 将图片文件转化为字节数组字符串，并对其进行Base64编码处理 	 * 

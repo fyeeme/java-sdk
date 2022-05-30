@@ -8,7 +8,9 @@ import com.netease.vcloud.upload.param.QueryVideoIDorWatermarkIDParam;
 import com.netease.vcloud.upload.recorder.Recorder;
 import com.netease.vcloud.upload.recorder.UploadRecorder;
 import com.netease.vcloud.util.FileUtil;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,7 +28,7 @@ public class Upload_RecoderDemo {
     /**
      * 日志实例
      */
-    public static final Logger logger = Logger.getLogger(Upload_RecoderDemo.class);
+    public static final Logger logger = LoggerFactory.getLogger(Upload_RecoderDemo.class);
 
 
     public static void main(String[] args) {

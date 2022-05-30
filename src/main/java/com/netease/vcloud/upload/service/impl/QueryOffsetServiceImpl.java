@@ -2,12 +2,14 @@ package com.netease.vcloud.upload.service.impl;
 
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+
 
 import com.netease.vcloud.VcloudException;
 import com.netease.vcloud.upload.param.QueryOffsetParam;
 import com.netease.vcloud.upload.service.QueryOffsetService;
 import com.netease.vcloud.upload.util.UploadUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -19,7 +21,7 @@ import com.netease.vcloud.upload.util.UploadUtil;
 public class QueryOffsetServiceImpl implements QueryOffsetService  {
 
 	/** 日志实例*/
-	public static final Logger logger = Logger.getLogger(QueryOffsetServiceImpl.class);
+	public static final Logger logger = LoggerFactory.getLogger(QueryOffsetServiceImpl.class);
 	
 	
 	/* 
